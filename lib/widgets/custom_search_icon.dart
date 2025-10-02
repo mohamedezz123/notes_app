@@ -5,17 +5,14 @@ class CustomSearchIcon extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GestureDetector(
-      onTap: () {},
-      child: Container(
-        height: 45,
-        width: 45,
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(16),
-          color: Colors.white.withOpacity(.05),
-        ),
-        child: Icon(Icons.search, size: 28),
+    return Container(
+      height: 45,
+      width: 45,
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(16),
+        color: Colors.white.withOpacity(.05),
       ),
+      child: IconButton(onPressed: () {}, icon: Icon(Icons.search)),
     );
   }
 }
